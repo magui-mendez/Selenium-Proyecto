@@ -1,0 +1,118 @@
+{
+  "id": "d772c6d9-8092-4e76-b782-8a3f3e7e7c0d",
+  "version": "2.0",
+  "name": "liverpool",
+  "url": "https://www.liverpool.com.mx",
+  "tests": [{
+    "id": "8c1cd9da-110d-4789-90df-09187cdb0e17",
+    "name": "liverpool-p",
+    "commands": [{
+      "id": "fdf92023-ee2d-4cb4-a0bc-d9c968da2f18",
+      "comment": "",
+      "command": "open",
+      "target": "/tienda/home.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57e7a3d0-7a1d-471c-9bee-d39c2fe0dc66",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27ada721-4771-4318-8eef-3cc3fef49d4a",
+      "comment": "",
+      "command": "click",
+      "target": "id=buscador",
+      "targets": [
+        ["id=buscador", "id"],
+        ["name=s", "name"],
+        ["css=#buscador", "css:finder"],
+        ["xpath=//input[@id='buscador']", "xpath:attributes"],
+        ["xpath=//li[@id='buscar']/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95b6a9fe-b425-4876-8130-1bf6f6b2766e",
+      "comment": "",
+      "command": "type",
+      "target": "id=buscador",
+      "targets": [
+        ["id=buscador", "id"],
+        ["name=s", "name"],
+        ["css=#buscador", "css:finder"],
+        ["xpath=//input[@id='buscador']", "xpath:attributes"],
+        ["xpath=//li[@id='buscar']/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "lavasecadora LG"
+    }, {
+      "id": "16609504-a9a1-4841-94e0-3ee7430f6eec",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=buscador",
+      "targets": [
+        ["id=buscador", "id"],
+        ["name=s", "name"],
+        ["css=#buscador", "css:finder"],
+        ["xpath=//input[@id='buscador']", "xpath:attributes"],
+        ["xpath=//li[@id='buscar']/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "024ace8d-a292-431f-b624-8baf3ddc9d7b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#productName_1060721994 > span",
+      "targets": [
+        ["css=#productName_1060721994 > span", "css:finder"],
+        ["xpath=//a[@id='productName_1060721994']/span", "xpath:idRelative"],
+        ["xpath=//li[6]/a[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Lavasecadora LG 18 kg blanca WD18WN6')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df5be538-f777-417d-bdb2-4c8db56e33a8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4a008bb-41f6-49f9-8bb4-7dfaa8f94ed4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Leer 2 opiniones",
+      "targets": [
+        ["linkText=Leer 2 opiniones", "linkText"],
+        ["css=.TTreadReviews", "css:finder"],
+        ["xpath=//a[contains(text(),'Leer 2 opiniones')]", "xpath:link"],
+        ["xpath=//div[@id='star']/span/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[2]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Leer 2 opiniones')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66d6461c-226b-45e5-b1ef-9e7fc7e46714",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2630)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bb91175c-ddb8-490d-83a5-11dd29c6c939",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8c1cd9da-110d-4789-90df-09187cdb0e17"]
+  }],
+  "urls": ["https://www.liverpool.com.mx/"],
+  "plugins": []
+}
