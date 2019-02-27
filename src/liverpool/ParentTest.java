@@ -7,6 +7,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ParentTest {
@@ -46,7 +47,8 @@ public class ParentTest {
 	}
 
 	public static void selectStar(String string) throws InterruptedException {
-		driver.findElement(By.xpath("//div[@id='star']//*[contains(@class, 'TTrating-5-0')]")).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='star']//*[contains(@class, 'TTrating-5-0')]")));
+		driver.findElement(By.xpath(" //div[@id='star']//*[@class = 'TTreadReviews']")).click();
 		Thread.sleep(4000);		
 		
 	}
